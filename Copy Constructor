@@ -1,0 +1,33 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using FirstProject;
+
+namespace FirstProject;
+
+public class Nagu
+{
+    // parameterized constructor.
+    int x;
+    public Nagu(int i)
+    {
+        x = i;
+        Console.WriteLine("Parameterized constructor is called:" + i);
+    }
+    public Nagu(Nagu obj)
+    {
+        x = obj.x;
+    }
+    void Display()
+    {
+        Console.WriteLine("value of x:" + x);
+    }
+    static void Main()
+    {
+        Nagu a1 = new Nagu(20);
+        a1.Display();
+        Nagu a2 = new Nagu(a1);
+        a2.Display();
+        Console.ReadLine();
+    }
+}
