@@ -1,0 +1,18 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace FirstProject;
+
+public class Implict
+{
+    int i; bool b;
+    static void Main()
+    {
+        Implict p = new FirstProject.Implict();
+        Console.WriteLine(p.i);
+        Console.WriteLine(p.b);
+        Console.ReadLine();
+    }
+
+}
