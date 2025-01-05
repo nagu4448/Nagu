@@ -1,0 +1,17 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace FirstProject;
+
+public class Static
+{
+    static Static()
+    {
+        Console.WriteLine("Static constructor is called");
+    }
+    static void Main()
+    {
+        Console.WriteLine("main method is called");
+    }
+}
