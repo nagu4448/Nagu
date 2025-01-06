@@ -1,0 +1,25 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using DemoProject;
+
+namespace DemoProject;
+
+
+class First
+{
+    public int x = 135;
+}
+public class Raju
+{
+    static void Main()
+    {
+        First f1 = new First();
+        First f2 = new First();
+        First f3 = new First();
+        Console.WriteLine(f1.x + " " + f2.x + " " + f3.x);
+        Console.ReadLine();
+    }
+}
+
+
