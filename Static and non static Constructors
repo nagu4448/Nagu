@@ -1,0 +1,37 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using DemoProject;
+
+namespace DemoProject;
+
+
+class First
+{
+    int x;
+    static int y;
+    public First(int x)
+    {
+        this.x = x;
+        Console.WriteLine("Non Static Constructor is called");
+    }
+    static First()
+    {
+        Console.WriteLine("Static Constructor is called");
+    }
+
+    public class Raju
+    {
+
+        static void Main()
+        {
+            First f1 = new First(123);
+            First f2 = new First(233);
+            Console.WriteLine(f1.x + " " + f2.x);
+            Console.WriteLine(y);
+            Console.ReadLine();
+        }
+    }
+
+
+}
