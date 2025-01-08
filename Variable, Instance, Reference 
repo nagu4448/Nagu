@@ -1,0 +1,24 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using DemoProject;
+
+namespace DemoProject;
+
+public class First
+{
+    int x = 100;
+    static int y = 233;
+    static void Main()
+    {
+        First f1 = new First();
+        First f2 = new First();
+        Console.WriteLine(f1.x);
+        Console.WriteLine(f2.x);
+        f2.x = 345;
+        Console.WriteLine(f2.x);
+        Console.WriteLine(y);
+        Console.ReadLine();
+
+    }
+}
